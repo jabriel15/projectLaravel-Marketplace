@@ -1,8 +1,8 @@
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap-reboot.css">
-<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap-grid.css">
+<link href="{{asset('admin/vendor/Bootstrap/dist/css/bootstrap-reboot.css')}}" rel="stylesheet" media="all">
+<link href="{{asset('admin/vendor/Bootstrap/dist/css/bootstrap-grid.css')}}" rel="stylesheet" media="all">
+<link href="{{asset('admin/vendor/Bootstrap/dist/css/bootstrap.css')}}" rel="stylesheet" media="all">
 
 <!-- Main Styles CSS -->
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/fonts.min.css">
+<link href="{{asset('admin/css/landing.css')}}" rel="stylesheet" media="all">
+<link href="{{asset('admin/css/fonts.min.css')}}" rel="stylesheet" media="all">
