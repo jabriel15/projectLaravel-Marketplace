@@ -22,14 +22,14 @@ use App\Http\Controllers\Dashboard\ProfileController;
 
 // route::resource('/', LandingController::class);
 
-Route::group(['prefix' => 'member', 'as' => 'member.', 'middleware' => ['auth:sanctum', 'verified'],
-function()
-{
+// Route::group(['prefix' => 'member', 'as' => 'member.', 'middleware' => ['auth:sanctum', 'verified'],
+// function()
+// {
     
-}
+// }
 
-]);
+// ]);
 
-// Route::get('/', function () {
-//     return view('landing');
-// });
+Route::get('/', function () {
+    return view('layouts.landing');
+});
