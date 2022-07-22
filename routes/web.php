@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
+// front(landing)
+use App\Http\Controllers\Landing\LandingController;
+
+
+// Member (Dashboard)
+use App\Http\Controllers\Dashboard\ProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +19,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
 
+// route::resource('/', LandingController::class);
 
+Route::group(['prefix' => 'member', 'as' => 'member.', 'middleware' => ['auth:sanctum', 'verified'],
+function()
+{
+    
+}
+
+]);
+
+// Route::get('/', function () {
+//     return view('landing');
+// });
