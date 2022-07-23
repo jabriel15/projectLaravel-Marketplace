@@ -16,7 +16,7 @@
     </head>
 
     <body class="landing-page">
-        @include('components.landing.loading')
+        @include('components.landing.preloader')
     
         @include('components.landing.header')
 

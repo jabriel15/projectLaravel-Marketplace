@@ -31,5 +31,5 @@ use App\Http\Controllers\Dashboard\ProfileController;
 // ]);
 
 Route::get('/', function () {
-    return view('layouts.landing');
+    return view('layouts.dashboard');
 });
