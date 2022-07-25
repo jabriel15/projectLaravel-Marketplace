@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->uuid()->unique();
+            $table->string('uuid')->index();
             $table->foreignId('level_user_id')->nullable()->index('fk_users_to_level_user');
             $table->string('name');
             $table->string('email')->unique();

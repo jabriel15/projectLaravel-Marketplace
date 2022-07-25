@@ -31,5 +31,10 @@ use App\Http\Controllers\Dashboard\ProfileController;
 // ]);
 
 Route::get('/', function () {
-    return view('layouts.dashboard');
+    return view('layouts.landing');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
